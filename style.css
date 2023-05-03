@@ -10,7 +10,6 @@
 }
 
 html{
-
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
     background-color: rgb(219, 215, 215);
@@ -31,7 +30,7 @@ nav{
     background-image: linear-gradient(transparent, rgb(219, 215, 215)), url(./assets/images.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 200px;
+    padding-bottom: 500px;
 }
 
 nav span{
@@ -67,6 +66,13 @@ nav a:hover{
 .container {
     text-align: center;
     background-color: rgb(219, 215, 215);
+    justify-content: center;
+    display: flexbox;
+    flex-wrap: nowrap;
+}
+
+h2{
+    text-align: center;
 }
 
 .card{
@@ -112,6 +118,8 @@ button:hover{
     color: white;
 }
 
+/* beneficios */
+
 .beneficios{
     background-image: linear-gradient(rgba(192, 190, 190, 0.925), transparent);
     border-radius: 15px;
@@ -135,3 +143,122 @@ button:hover{
 
 /* Footer */
 
+form h3{
+    color: blueviolet;
+}
+
+.registrate-ya input{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+input:last-child{
+    margin-top: 25px;
+    padding: 10px 50px;
+    border-radius: 12px;
+    border: 2px solid blueviolet;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input:last-child:hover{
+    background-color: rgb(115, 35, 190);
+    color: white;
+}
+
+.registrate-ya h3{
+    color: blueviolet;
+    margin-bottom: 24px;
+}
+
+/* Contacto */
+
+.contacto a{
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.contacto{
+    background-image: linear-gradient(rgb(219, 215, 215), rgb(165, 164, 164));
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    font-size: 1.8rem;
+
+}
+
+.contacto p{
+    text-align: right;
+    margin: 15px;
+}
+
+@media only screen and (min-width: 720px){
+
+/* header */
+nav{
+    text-align: left;
+}
+
+nav h1{
+    border-bottom: 3px solid black;
+    font-size: 3.5rem;
+    margin-right: 75%;
+}
+
+nav a{
+    display: flex;
+    border: 0;
+    text-align: right;
+    font-size: 2rem;
+    
+}
+nav a:hover{
+    border-bottom: 5px solid rgb(96, 28, 160);
+    margin-left: 77%;
+}
+
+/* main */
+
+.container{
+    display: flex;
+}
+
+/* beneficios */
+
+
+
+.beneficios ul li{
+    margin-left: 100px;
+    margin-bottom: 35px;
+}
+
+/* Registrate ya */
+
+.registrate-ya h3{
+    border-top: solid black 2px;
+}
+
+.registrate-ya input{
+    display: flex;
+}
+
+input:last-child{
+    margin-top: -20px;
+    margin-left: 25px;
+}
+
+/* contact */
+
+footer{
+    width: 100%;
+}
+
+.contacto{
+    display: inline;
+}
+
+.contacto a{
+    margin: 8px;
+}
+
+}
